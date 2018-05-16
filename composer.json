@@ -1,0 +1,39 @@
+{
+    "name": "bantenprov/item",
+    "description": "Item",
+    "authors": [
+        {
+            "name": "bantenprov",
+            "email": "developer.bantenprov@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/item,",
+      "issues": "https://github.com/bantenprov/item/issues",
+      "wiki": "https://github.com/bantenprov/item/wiki"
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Bantenprov\\Item\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bantenprov\\Item\\ItemServiceProvider"
+            ],
+            "aliases": {                
+                "Item": "Bantenprov\\Item\\Facades\\Item"
+            }
+        }
+    }
+}
